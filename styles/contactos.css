@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    background-color: #0E141B;
+}
+
+p {
+    color: white;
+    font-family: arial;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*  HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 6rem;
+    /*border-bottom: 1px solid white;*/
+    background-color: #0E141B;
+}
+
+.left-section {
+    min-width: 160px;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: row;
+    min-width: 335px;
+}
+
+.header-home:hover,
+.header-sobre:hover,
+.header-projetos:hover,
+.header-contacto:hover {
+    text-decoration: underline dotted;
+    text-decoration-color: white;
+}
+
+.margin {
+    margin-right: 1rem;
+}
+
+/*TYPEWRITER CONTAINER*/
+
+.margin-container {
+    display: flex;
+}
+
+.typewriter-container {
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 10rem;
+}
+
+.typewriter-text {
+    color: #FF5277;
+    font-size: clamp(30px, 20vw, 112px);
+    width: 0;
+    font-family: arial;
+    border-right: 2px solid white;
+    overflow: hidden;
+    text-wrap: nowrap;
+    animation:
+        escrever 1s steps(9) forwards, blink 0.7s ease-in-out alternate infinite;
+}
+
+
+@keyframes escrever {
+    from { width: 0}
+    to { width: 100%}
+}
+
+@keyframes blink {
+    50% {border-color: transparent}
+}
+
+/* MEUS CONTACTOS */
+
+.meus-projetos {
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+    margin-bottom: 10rem;
+}
+
+.projeto-container,
+.projeto-container-desativado {
+    display: flex;
+    width: 30%;
+    margin-left: 35%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #FF5277;
+    border-radius: 60px;
+    box-shadow: 0px 0px 30px #FF5277;
+    transition: transform 0.5s ease-in-out;
+}
+
+.projeto-container-desativado {
+    opacity: 0.5;
+}
+
+.projeto-container:hover {
+    transform: scale(1.1);
+}
+
+.img-contacto {
+    width: 120px;
+    border-radius: 50%;
+}
+
+.info-contacto {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    font-size: 26px;
+}
+
+/*FOOTER*/
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid white;
+    padding-top: 1rem;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 1rem;
+}
+
+.footer-left-section {
+    min-width: 324px;
+}
+
+.footer-right-section {
+    min-width: 92px;
+}
+
+.follow-me {
+    text-decoration: none;
+}
+
+.follow-me:hover {
+    text-decoration: underline dotted;
+    text-decoration-color: white;
+}

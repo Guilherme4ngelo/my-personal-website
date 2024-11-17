@@ -1,0 +1,306 @@
+body {
+    margin: 0;
+    background-color: #0E141B;
+}
+
+p {
+    color: white;
+    font-family: arial;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*HEADER*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 6rem;
+    /*border-bottom: 1px solid white;*/
+    background-color: #0E141B;
+}
+
+.left-section {
+    min-width: 160px;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: row;
+    min-width: 335px;
+}
+
+.header-home:hover,
+.header-sobre:hover,
+.header-projetos:hover,
+.header-contacto:hover {
+    text-decoration: underline dotted;
+    text-decoration-color: white;
+}
+
+.margin {
+    margin-right: 1rem;
+}
+
+/*TYPEWRITER TEXT AND ANIMATION*/
+
+
+.margin-container {
+    display: flex;
+}
+
+.typewriter-container {
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 10rem;
+}
+
+.typewriter-text {
+    color: #FF5277;
+    font-size: clamp(30px, 20vw, 112px);
+    width: 0;
+    font-family: arial;
+    border-right: 2px solid white;
+    overflow: hidden;
+    text-wrap: nowrap;
+    animation:
+        escrever 1s steps(9) forwards, blink 0.7s ease-in-out alternate infinite;
+}
+
+
+@keyframes escrever {
+    from { width: 0}
+    to { width: 100%}
+}
+
+@keyframes blink {
+    50% {border-color: transparent}
+}
+
+/*SOBRE MIM*/
+
+.sobre-mim {
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    border-style: solid;
+    border-radius: 225px;
+    border-color: #ff2252;
+    align-items: center;
+    min-width: 1050px;
+    margin-bottom: 10rem;
+}
+
+.minha-foto {
+    width: 450px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px #FF5277;
+}
+
+.descricao {
+    min-width: 50%;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+
+/*MINHA TRAJETORIA*/
+
+.minha-trajetoria {
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 200px;
+}
+
+.texto-trajetoria {
+    color: white;
+    font-size: clamp(30px, 20vw, 112px);
+    width: 0;
+    font-family: arial;
+    border-right: 2px solid white;
+    overflow: hidden;
+    text-wrap: nowrap;
+    animation:
+        escrever 1s steps(9) forwards, blink 0.7s ease-in-out alternate infinite;
+}
+
+/*timeline*/
+
+.timeline-container {
+    width: 90%;
+    display: flex;
+    margin-bottom: 10rem;
+    padding-left: 10%;
+}
+
+.timeline-left {
+    border-right-style: solid;
+    border-right-color: #FF5277;
+    border-right-width: 5px; 
+    width: 40%;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25%;
+    padding-top: 10rem;
+    padding-right: 2rem;
+    align-items: flex-end;
+}
+
+.ano1,
+.ano2,
+.ano3 {
+    font-size: clamp(30px, 10vw, 90px);
+}
+
+.timeline-text-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 17%;
+    padding-top: 5rem;
+}
+
+.titulo {
+    font-size: clamp(30px, 10vw, 60px);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #FF5277;
+    position: relative;
+    padding-left: 28%;
+}
+
+.subtitulo {
+    font-size: clamp(10px, 10vw, 30px);
+    position: relative;
+    padding-left: 28%;
+}
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid white;
+    padding-top: 1rem;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 1rem;
+}
+
+.footer-left-section {
+    min-width: 324px;
+}
+
+.footer-right-section {
+    min-width: 92px;
+}
+
+.follow-me {
+    text-decoration: none;
+}
+
+.follow-me:hover {
+    text-decoration: underline dotted;
+    text-decoration-color: white;
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        display: none;
+    }
+
+
+    .typewriter-container {
+        margin-bottom: 30px;;
+    }
+
+    .typewriter-text {
+        font-size: 50px;
+    }
+
+    /*
+    .sobre-mim {
+        display: none;
+    }
+    */
+
+    .sobre-mim {
+        width: 100%;
+        margin-left: 1%;
+        flex-direction: column;
+        border-radius: 12px;
+        min-width: 100%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    
+    .minha-foto {
+        width: 50%;
+        border-radius: 50%;
+        box-shadow: 0px 0px 30px #FF5277;
+        margin-bottom: 5%;
+    }
+    
+    .descricao {
+        width: 90%;
+        text-align: justify;
+        min-width: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .texto-trajetoria {
+        font-size: 50px;
+    }
+
+    .timeline-container {
+        width: 90%;
+        display: flex;
+        margin-bottom: 5rem;
+        padding-left: 2%;
+    }
+
+    .timeline-left {
+        border-right-width: 5px; 
+        width: 40%;
+        height: 500px;
+        row-gap: 25%;
+        padding-top: 10rem;
+        padding-right: 2rem;
+    }
+
+    .ano1,
+    .ano2,
+    .ano3 {
+        font-size: 20px;
+    }
+
+    .titulo {
+        font-size: 20px;
+        border-bottom-width: 1px;
+        padding-left: 28%;
+    }
+    
+    .subtitulo {
+        font-size: 20px;
+        padding-left: 28%;
+    }
+
+    .footer {
+        justify-content: center;
+    }
+
+    .footer-right-section {
+        display: none;
+    }
+}

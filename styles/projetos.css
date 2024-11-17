@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    background-color: #0E141B;
+}
+
+p {
+    color: white;
+    font-family: arial;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*HEADER*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 6rem;
+    /*border-bottom: 1px solid white;*/
+    background-color: #0E141B;
+}
+
+.left-section {
+    min-width: 160px;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: row;
+    min-width: 335px;
+}
+
+.header-home:hover,
+.header-sobre:hover,
+.header-projetos:hover,
+.header-contacto:hover {
+    text-decoration: underline dotted;
+    text-decoration-color: white;
+}
+
+.margin {
+    margin-right: 1rem;
+}
+
+/*EFEITO TYPEWRITER*/
+
+.margin-container {
+    display: flex;
+}
+
+.margin-container {
+    display: flex;
+}
+
+.typewriter-container {
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 10rem;
+}
+
+.typewriter-text {
+    color: #FF5277;
+    font-size: clamp(30px, 20vw, 112px);
+    width: 0;
+    font-family: arial;
+    border-right: 2px solid white;
+    overflow: hidden;
+    text-wrap: nowrap;
+    animation:
+        escrever 1s steps(9) forwards, blink 0.7s ease-in-out alternate infinite;
+}
+
+
+@keyframes escrever {
+    from { width: 0}
+    to { width: 100%}
+}
+
+@keyframes blink {
+    50% {border-color: transparent}
+}
+
+/*MEUS PROJETOS*/
+
+.meus-projetos {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10rem;
+}
+
+.projeto-container {
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #FF5277;
+    box-shadow: 0px 0px 30px #FF5277;
+}
+
+.img-projeto {
+    width: 50%;
+}
+
+.info-projeto {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.titulo-projeto-container {
+    display: flex;
+    justify-content: center;
+}
+
+.titulo-projeto {
+    margin-bottom: 2rem;
+}
+
+.descricao-projeto1 {
+    margin-bottom: 4rem;
+}
+
+.github-logo-container {
+    display: flex;
+    justify-content: end;
+}
+
+.github-link {
+    width: 24px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.github-logo {
+    width: 40px;
+}
+
+/*FOOTER*/
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid white;
+    padding-top: 1rem;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 1rem;
+}
+
+.footer-left-section {
+    min-width: 324px;
+}
+
+.footer-right-section {
+    min-width: 92px;
+}
+
+.follow-me {
+    text-decoration: none;
+}
+
+.follow-me:hover {
+    text-decoration: underline dotted;
+    text-decoration-color: white;
+}
